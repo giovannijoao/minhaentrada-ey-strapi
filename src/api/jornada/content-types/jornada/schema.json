@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jornadas",
+  "info": {
+    "singularName": "jornada",
+    "pluralName": "jornadas",
+    "displayName": "Jornada"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
