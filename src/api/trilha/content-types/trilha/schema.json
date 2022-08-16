@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trilhas",
+  "info": {
+    "singularName": "trilha",
+    "pluralName": "trilhas",
+    "displayName": "Trilha",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "jornadas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jornada.jornada",
+      "mappedBy": "trilha"
+    },
+    "color": {
+      "type": "string",
+      "default": "yellow.brand"
+    },
+    "aulas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::aula.aula",
+      "mappedBy": "trilha"
+    }
+  }
+}

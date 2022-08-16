@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "jornadas",
+  "collectionName": "aulas",
   "info": {
-    "singularName": "jornada",
-    "pluralName": "jornadas",
-    "displayName": "Jornada",
+    "singularName": "aula",
+    "pluralName": "aulas",
+    "displayName": "Aula",
     "description": ""
   },
   "options": {
@@ -18,21 +18,17 @@
     "description": {
       "type": "richtext"
     },
+    "duration": {
+      "type": "decimal"
+    },
+    "url": {
+      "type": "text"
+    },
     "trilha": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::trilha.trilha",
-      "inversedBy": "jornadas"
-    },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      "inversedBy": "aulas"
     }
   }
 }
