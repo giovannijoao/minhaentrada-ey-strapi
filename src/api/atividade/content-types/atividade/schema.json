@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atividades",
+  "info": {
+    "singularName": "atividade",
+    "pluralName": "atividades",
+    "displayName": "Atividade",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "questions": {
+      "displayName": "atividade",
+      "type": "component",
+      "repeatable": true,
+      "component": "questao.atividade"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "aulas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::aula.aula",
+      "mappedBy": "atividade"
+    }
+  }
+}

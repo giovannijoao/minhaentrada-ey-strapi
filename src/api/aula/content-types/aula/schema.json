@@ -18,9 +18,6 @@
     "description": {
       "type": "richtext"
     },
-    "duration": {
-      "type": "decimal"
-    },
     "url": {
       "type": "text"
     },
@@ -28,6 +25,15 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::trilha.trilha",
+      "inversedBy": "aulas"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "atividade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::atividade.atividade",
       "inversedBy": "aulas"
     }
   }

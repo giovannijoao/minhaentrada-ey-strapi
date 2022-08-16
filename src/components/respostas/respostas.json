@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_respostas_respostas",
+  "info": {
+    "displayName": "respostas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "isCorrect": {
+      "type": "boolean"
+    }
+  }
+}
