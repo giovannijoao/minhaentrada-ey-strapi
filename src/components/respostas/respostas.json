@@ -10,7 +10,8 @@
       "type": "richtext"
     },
     "isCorrect": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     }
   }
 }
