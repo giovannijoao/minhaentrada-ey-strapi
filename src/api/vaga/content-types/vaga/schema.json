@@ -4,7 +4,8 @@
   "info": {
     "singularName": "vaga",
     "pluralName": "vagas",
-    "displayName": "Vaga"
+    "displayName": "Vaga",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,8 +20,9 @@
     },
     "jornadas": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::jornada.jornada"
+      "relation": "manyToMany",
+      "target": "api::jornada.jornada",
+      "inversedBy": "vagas"
     }
   }
 }
