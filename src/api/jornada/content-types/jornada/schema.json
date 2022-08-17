@@ -40,6 +40,12 @@
       "relation": "manyToMany",
       "target": "api::vaga.vaga",
       "inversedBy": "jornadas"
+    },
+    "emblemas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::emblema.emblema",
+      "inversedBy": "jornadas"
     }
   }
 }
