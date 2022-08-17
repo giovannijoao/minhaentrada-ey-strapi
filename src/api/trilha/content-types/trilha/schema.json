@@ -18,12 +18,6 @@
     "description": {
       "type": "richtext"
     },
-    "jornadas": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::jornada.jornada",
-      "mappedBy": "trilha"
-    },
     "color": {
       "type": "string",
       "default": "yellow.brand"
@@ -33,6 +27,12 @@
       "relation": "oneToMany",
       "target": "api::aula.aula",
       "mappedBy": "trilha"
+    },
+    "jornadas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::jornada.jornada",
+      "inversedBy": "trilhas"
     }
   }
 }
