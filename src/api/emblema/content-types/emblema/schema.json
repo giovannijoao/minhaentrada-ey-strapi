@@ -4,7 +4,8 @@
   "info": {
     "singularName": "emblema",
     "pluralName": "emblemas",
-    "displayName": "Emblema"
+    "displayName": "Emblema",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,20 +16,21 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "jornadas": {
+    "trilha": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::jornada.jornada",
-      "inversedBy": "emblemas"
+      "relation": "oneToOne",
+      "target": "api::trilha.trilha",
+      "inversedBy": "emblema"
     }
   }
 }
