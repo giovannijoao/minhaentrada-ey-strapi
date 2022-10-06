@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "questionario_perfils",
+  "info": {
+    "singularName": "questionario-perfil",
+    "pluralName": "questionario-perfils",
+    "displayName": "Questionario-Perfil"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil.questao-de-perfil"
+    }
+  }
+}

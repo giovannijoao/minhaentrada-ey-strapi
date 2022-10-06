@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perfil_usuarios",
+  "info": {
+    "singularName": "perfil-usuario",
+    "pluralName": "perfil-usuarios",
+    "displayName": "PerfilUsuario"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "jornadas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::jornada.jornada",
+      "inversedBy": "perfil_usuarios"
+    }
+  }
+}

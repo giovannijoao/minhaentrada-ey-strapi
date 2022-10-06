@@ -40,6 +40,12 @@
       "relation": "manyToMany",
       "target": "api::vaga.vaga",
       "inversedBy": "jornadas"
+    },
+    "perfil_usuarios": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::perfil-usuario.perfil-usuario",
+      "inversedBy": "jornadas"
     }
   }
 }
