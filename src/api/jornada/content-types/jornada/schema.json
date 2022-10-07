@@ -39,7 +39,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::vaga.vaga",
-      "inversedBy": "jornadas"
+      "mappedBy": "jornadas"
     },
     "perfil_usuarios": {
       "type": "relation",

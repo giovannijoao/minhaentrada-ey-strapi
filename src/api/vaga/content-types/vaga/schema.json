@@ -23,6 +23,16 @@
       "relation": "manyToMany",
       "target": "api::jornada.jornada",
       "inversedBy": "vagas"
+    },
+    "shortDescription": {
+      "type": "string",
+      "required": true,
+      "maxLength": 450
+    },
+    "conhecimentos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::conhecimento.conhecimento"
     }
   }
 }

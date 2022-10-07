@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conhecimentos",
+  "info": {
+    "singularName": "conhecimento",
+    "pluralName": "conhecimentos",
+    "displayName": "Conhecimento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
